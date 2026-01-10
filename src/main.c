@@ -1,7 +1,12 @@
 #include <stdio.h>
 
-int main(int argc, char *argv)
+int main()
 {
-    printf("Hello world!\n");
+    int x = 100;
+    int z= 50;
+    char letra_a = 'a';
+    float y = 1.1;
+    float suma = x + (int)y;  
+  printf("x: %d \ny: %f \nsuma: %f\n", x, y, suma);
     return 0;
 }
