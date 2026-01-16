@@ -1,12 +1,21 @@
 #include <stdio.h>
 
-int main()
-{
-    int x = 100;
-    int z= 50;
-    char letra_a = 'a';
-    float y = 1.1;
-    float suma = x + (int)y;  
-  printf("x: %d \ny: %f \nsuma: %f\n", x, y, suma);
+int main() {
+    // Declare the variables
+    float side, area, volume;
+
+    // This section handles the data input, specifically for the side length of the square.
+    printf("Enter the side length: ");
+    scanf("%f", &side);
+
+    // This is where the operations are performed to reach the result.
+    area = side * side;  
+    volume = side * side * side;
+
+    // "The results are printed."
+    // The '%.2f' format is being used to show only 2 decimal places of the result.
+    printf("Square area: %.2f\n", area);
+    printf("Cube volume: %.2f\n", volume);
+
     return 0;
 }
