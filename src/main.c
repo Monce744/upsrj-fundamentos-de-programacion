@@ -1,21 +1,29 @@
 #include <stdio.h>
 
+int is_even(int number)
+ {
+    if (number % 2 == 0) {
+        return 1;
+    } else {
+        return 0;
+    }
+}
+
 int main() {
-    // Declare the variables
-    float side, area, volume;
+    int num;
 
-    // This section handles the data input, specifically for the side length of the square.
-    printf("Enter the side length: ");
-    scanf("%f", &side);
-
-    // This is where the operations are performed to reach the result.
-    area = side * side;  
-    volume = side * side * side;
-
-    // "The results are printed."
-    // The '%.2f' format is being used to show only 2 decimal places of the result.
-    printf("Square area: %.2f\n", area);
-    printf("Cube volume: %.2f\n", volume);
+    printf("Ingrese un numero: ");
+    
+    if (scanf("%d", &num) == 1) {
+        
+      
+        if (is_even(num)) {
+            printf("El numero es par\n");
+        } else {
+            printf("El numero es impar\n");
+        }
+        
+    }
 
     return 0;
 }
